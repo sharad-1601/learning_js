@@ -1,0 +1,2 @@
+A page which basically have two buttons increase and decrease button.
+Initial score set as 10 and after 20 it will warning as maximum score reached once score reached to 0 it alert as minimum score reached.
