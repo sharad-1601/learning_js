@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <script>
+        let a = 10
+        let b = 20
+
+        let result = a+b
+
+        
+
+        //promises is just a container which returs you a result when the result is ready
+
+       
+
+
+        async function getData(){
+            let resultFromServer = await fetch(
+                "https://jsonplaceholder.typicode.com/posts"
+            )
+            console.log(await resultFromServer.json())
+        }
+        
+        getData()
+
+        console.log(result)//the result 30 comes before but we call fn before that this is because it is asynchrous and it takes time to execute
+
+    </script>
+</body>
+</html>
