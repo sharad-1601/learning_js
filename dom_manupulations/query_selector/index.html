@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="block">
+        <p class="paragraph">Welcome to my website</p>
+    </nav>
+
+    <div class="block">
+        <h4> hello everyone, my name is <span id="username">Sharad Shakya</span></h4>
+        <p class="paragraph"> Here is code for you</p>
+        <pre><code>console.log("Hello there")</code></pre>
+    </div>
+
+    <div class="block">
+        <div>
+            <h3 class="block">Hi there</h3>
+        </div>
+        <h4>Hello i am here </h4>
+    </div>
+    <script>
+
+        //selector
+        //tag name
+        //id
+        //class name
+
+
+        //innerHtml by tag name
+
+        // const body = document.querySelector("body")  //here body is tag name 
+        // // on console we get complete body tag
+        // console.log(body) 
+        // body.innerHTML = "<h1>Body Changed</h1>"
+        // // body but with changed items 
+        // console.log(body) 
+
+
+        // console.log(body.innerHTML) // returns string complete body
+        
+
+        //when we have mutiple div then 
+
+        const ele = document.querySelectorAll('.block') // it moves from top to bottom and change first div which get
+        ele.forEach((e) => { console.log(e.innerHTML)})
+
+        // div.innerHTML = "<h1> Hacker is here </h1>"
+
+        //if we want to select all div then use queryselectorall
+
+    // now by id  #
+
+    // const username = document.querySelector('#username')
+    // console.log(username)
+    // console.log(username.innerText)
+    // username.innerText = "Shakya Sharad"
+
+
+
+    // //now by class .
+
+    // const ele = document.querySelector('.block')
+    // console.log(ele.innerText)
+    </script>
+</body>
+</html>
